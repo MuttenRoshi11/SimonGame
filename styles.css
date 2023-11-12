@@ -88,7 +88,7 @@ body {
 @media (max-width: 1000px) {
   .container-fluid {
     display: grid;
-    grid-template-rows: auto 70vh;
+    grid-template-rows: auto;
     justify-content: center;
   }
   .main {
