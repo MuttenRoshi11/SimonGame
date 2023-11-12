@@ -16,6 +16,7 @@ body {
     width: 80%;
     margin: auto;
     grid-template-columns: 70% 30%;
+    gap: 50px;
   }
   .main {
     display: inherit;
@@ -29,6 +30,10 @@ body {
     flex-wrap: wrap;
     align-content: start;
   }
+  .buttons {
+    display: inherit;
+    grid-template-columns: auto auto;
+  }
 }
 .start-button {
   background-color: #011F3F;
@@ -36,7 +41,6 @@ body {
   color: white;
   font-size: 1.5rem;
   font-family: 'Press Start 2P', cursive;
-  margin-top: 25px;
 }
 
 .btn {
@@ -81,36 +85,39 @@ body {
 .main {
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-columns: auto;
+  /* grid-template-columns: 100%; */
   justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 @media (max-width: 1000px) {
   .container-fluid {
     display: grid;
-    grid-template-rows: auto;
-    justify-content: center;
+    height: 100%;
+    align-items: center;
+    gap: 100px;
+    margin: 50px;
   }
   .main {
     display: inherit;
     justify-content: center;
     align-items: center;
+    gap: 100px;
   }
   .main > div {
     display: inherit;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
   }
   .rules {
     color: wheat;
-    margin-top: 50px;
     font-size: 1rem;
     display: flex;
-    text-align: start;
     flex-direction: column;
-    padding-left: 250px;
-    padding-right: 250px;
+    text-align: start;
+    justify-content: center;
     align-items: center;
   }
 }
