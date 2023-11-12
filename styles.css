@@ -81,7 +81,7 @@ body {
 .main {
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-columns: 91vh;
+  grid-template-columns: auto;
   justify-content: center;
   align-items: center;
 }
