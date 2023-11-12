@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="main">
+      <div class="title">
+        <h1 id="level-title">Let's play!</h1>
+        <h2 class="highest-lvl">Highest Level: 0</h2>
+      </div>
+      <div class="buttons">
+        <div type="button" id="green" class="btn green"></div> 
+        <div type="button" id="red" class="btn red"></div>
+        <div type="button" id="yellow" class="btn yellow"></div>
+        <div type="button" id="blue" class="btn blue"></div>
+      </div>
+        <button class="start-button">Start the game</button>
+    </div>
+    <div class="rules">
+      <button id="rules-btn" class="rules-btn" type="button">Rules</button>
+      <div id="game-rules" class="hidden">
+        <h4>When game starts, one random color will blink and you will hear sound.</h4>
+        <h4>You will have to remember which color and guess</h4>
+        <h4>Each time you guess correctly, new color will be added to pattern.</h4>
+        <h4>Each time new color is added to the pattern you have to guess from the first one until the last one.</h4>
+        <h4>Level is displayed, each time your guess is correct you go one level up.</h4>
+      </div>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./index.js"></script>
+</body>
+
+</html>

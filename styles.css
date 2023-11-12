@@ -1,0 +1,130 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  margin: 3%;
+  color: #FEF2BF;
+}
+
+@media (min-width: 1000px) {
+  .container-fluid {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 70% 30%;
+  }
+  .main {
+    display: inherit;
+  }
+  .rules {
+    color: wheat;
+    margin-top: 50px;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: start;
+  }
+}
+.start-button {
+  background-color: #011F3F;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 25px;
+}
+
+.btn {
+  margin: 15px;
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.highest-lvl {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+}
+.main {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 91vh;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1000px) {
+  .container-fluid {
+    display: grid;
+    grid-template-rows: auto 70vh;
+    justify-content: center;
+  }
+  .main {
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+  }
+  .main > div {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rules {
+    color: wheat;
+    margin-top: 50px;
+    font-size: 1rem;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    padding-left: 250px;
+    padding-right: 250px;
+    align-items: center;
+  }
+}
+#rules-btn {
+  color: wheat;
+  font-size: 1.7rem;
+  background-color: #011F3F;
+  border-radius: 5px;
+  border: 1px solid #FEF2BF;
+  width: 120px;
+}
+.active {
+  display: block;
+}
+.hidden {
+  display: none;
+}
