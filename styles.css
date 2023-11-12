@@ -12,6 +12,7 @@ body {
 
 @media (min-width: 1000px) {
   .container-fluid {
+    color: white;
     display: grid;
     width: 80%;
     margin: auto;
@@ -92,6 +93,7 @@ body {
 }
 @media (max-width: 1000px) {
   .container-fluid {
+    color: white;
     display: grid;
     height: 100%;
     align-items: center;
